@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assest/javascript/adminPage.js" defer></script>
+    <script src="https://kit.fontawesome.com/3200d9ee08.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="/assest/css/adminPage.css">
+    <link rel="shortcut icon" type="image" href="/assest/images/favicon.jpg">
+    <title>Can Man Sys</title>
+</head>
+
+<body>
+
+    <!-- Nav-Bar -->
+    <nav>
+        <div class="logo"><img src="/assest/images/logo.jpg" alt="" width="50px"></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Add">AddItem</a></li>
+            <li><a href="#Delete">DeleteItem</a></li>
+            <li><a href="#Sale">Sales</a></li>
+            <li><a href="Home.html">Logout</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul>
+    </nav>
+
+    <!-- End NAv Bar -->
+
+    <!-- parallax -->
+    <div class="parallax">
+    </div>
+
+    <!-- Add Item's -->
+    <section class="addItem-Container" id="Add">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="additem">Add Item's</h2>
+                </div>
+            </div>
+            <div class="addContent">
+                <div class="itemContent">
+                    <h3>Add Item</h3>
+                    <p>Add what as per your wish</p>
+                </div>
+                <div class="formContent">
+                    <form role="form" class="add-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Item Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Item Amount" required>
+                        </div>
+
+                        <button onclick="Myfunctionn()" class="btn">Add Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Add Item's -->
+    <hr>
+
+    <!-- delete item -->
+    <section class="deleteItem-Container" id="Delete">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="delete">Delete Item</h2>
+                </div>
+            </div>
+            <div class="deleteContent">
+                <div class="itemContent">
+                    <h3>Delete Item</h3>
+                    <p>Enter the item you want to delete</p>
+                </div>
+                <div class="formContent">
+                    <form role="form" class="add-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Item Name" required>
+                        </div>
+
+
+                        <button onclick="Myfunction()" class="btn">Delete Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End delete item -->
+    <hr>
+
+    <!-- saleItem -->
+
+    <section class="saleItem-Container" id="Sale">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="sale">Today's Sale</h2>
+                </div>
+            </div>
+            <div class="saleContent">
+                <div class="itemContent">
+                    <h3>Sale</h3>
+                    <p>Add item for today's sale</p>
+
+                </div>
+                <div class="formContent">
+                    <form role="form" class="add-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Item Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Original Amount" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="New Amount" required>
+                        </div>
+
+                        <button onclick="Myfunctionnn()" class="btn btn-md">Add Item to the sale</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End saleItem -->
+    <hr>
+
+    <!-- Total sales -->
+
+    <section class="Total-Container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="total">Total Earning of this month</h2>
+                </div>
+            </div>
+            <div class="totalContent">
+                <div class="itemContent">
+                    <h3>₹ 2,000,456</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Total sales -->
+
+      <!-- Scroll Top btn -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+
+    <!-- slogan -->
+
+    <section class="slogan">
+        <div class="container">
+            <h2><span style="color:gold">All you need</span>, give it a go</h2>
+        </div>
+    </section>
+
+    <!-- End slogan -->
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <span>Andheri (E), Mumbai-400093</span><br>
+        <span>Contact No: (225)-445-589</span>
+    </footer>
+    <!--end footer-->
+
+
+</body>
+
+</html>

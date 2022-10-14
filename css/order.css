@@ -1,0 +1,392 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: #eee;
+}
+
+nav {
+    background: #000;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+  }
+  
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  
+  }
+  
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+  }
+  
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  
+  }
+  
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255)
+  }
+  
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243)
+  }
+  
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191)
+  }
+  
+  .fa-github:hover {
+    color: rgb(255, 123, 0)
+  }
+  
+  nav .logo img {
+    margin: 6px 0px 0px 60px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 45%;
+  
+  }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .title{
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.container .product-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0.1);
+    outline: .1rem solid #ccc;
+}
+
+.container .product-container .product img{
+    height: 20rem;
+}
+.container .product-container .product:hover img {
+    transform: scale(.9);
+}
+
+.container .product-container .product h3{
+    padding: 4rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+.container .product-container .product:hover h3{
+    color: #27ae60;
+}
+
+.container .product-container .product .price{
+    font-size: 2rem;
+    color: #444;
+}
+
+.products-preview{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.products-preview .preview.active{
+    display: inline-block;
+}
+
+.products-preview .preview img{
+    height: 30rem;
+}
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+    color: #444;
+    padding: 5rem 0;
+    font-size: 2.5rem;
+}
+
+.products-preview .preview .stars{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i{
+    color: #27ae60;
+}
+
+.products-preview .preview .stars span{
+    color: #999;
+}
+
+.products-preview .preview p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.products-preview .preview .price{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+
+.products-preview .preview .button{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.products-preview .preview .button a{
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: .1rem solid #444;
+}
+
+.products-preview .preview .button a.cart{
+    background: #444;
+    color: #fff;
+}
+
+.products-preview .preview .button a.cart:hover{
+    background: #111;
+}
+
+.products-preview .preview .button a.buy:hover{
+    background: #444;
+    color: #fff;
+}
+
+/* Scroll top */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+/* slogan */
+
+.slogan{
+    text-align: center ;
+    padding: 10px;
+    text-transform: lowercase;
+    font-family: 'cursive',serif;
+    color: #fff;
+    background-color: #2e1e1f;
+  }
+  .slogan .container{
+    padding: 70px;
+    font-size: 20px;
+  }
+  
+  /* footer */
+  footer {
+    background: #1c1010;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+  }
+  
+  .social-links a {
+    border: 2px solid#fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+  }
+  
+  .social-links a:hover {
+    background: #fff;
+    color: #2b2b2b;
+  }
+  
+  .footer span {
+    margin-top: 1rem;
+    display: block;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+  }
+  
+
+
+
+/* Media Quires */
+
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 500px) {
+    #sliderimg {
+        width: 50vw;
+      height: 30vh;
+    }
+    
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+
+}
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+    .products-preview .preview img{
+        height: 25rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
+}
